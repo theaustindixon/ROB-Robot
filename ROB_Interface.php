@@ -16,7 +16,7 @@ $rcmd = $_POST["rcmd"];
 	}
 	if ($rcmd == "<"){
         $fp =fopen($comPort, "w");
-		fwrite($fp, 4); /* tserial = 52 */
+		fwrite($fp, 4); /* serial = 52 */
 		fclose($fp);
 	}
 	if ($rcmd == ">"){
